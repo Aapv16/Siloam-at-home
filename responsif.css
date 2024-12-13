@@ -1,0 +1,127 @@
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+  #hero {
+    height: 100vh;
+    border-bottom: 1px solid #ddff00;
+  }
+
+  .img-fluid {
+    height: 100vh;
+    padding-top: 4rem;
+  }
+
+  .hero .svg i {
+    display: none;
+  }
+
+  h3 {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px #000000;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: rgb(54, 54, 54);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: justify;
+    width: 20rem;
+    justify-content: center;
+  }
+
+  .fon-cutom {
+    color: rgb(52, 52, 52);
+    font-weight: 400;
+    text-shadow: 0 0 5px #32323200;
+  }
+
+  .hero .icon i {
+    justify-content: center;
+    padding-bottom: 2rem;
+    margin: 0.5rem;
+    font-size: 20px;
+    color: #0a0a0a;
+  }
+  .hero .icon i:hover {
+    color: #00aaff;
+  }
+
+  .btn-custom1 {
+    min-width: 150px;
+  }
+  .btn-custom1:hover {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.87);
+    color: #707070;
+  }
+  .footer-custom {
+    position: absolute;
+    justify-content: center;
+    margin-top: 9rem;
+    margin-left: 7rem;
+    max-width: 150px;
+  }
+
+  /* profil */
+  #profil {
+    padding-top: 5rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #ddff00;
+    border-radius: 5px;
+  }
+
+  /*  */
+  #about {
+    height: 100vh;
+    padding-top: 5rem;
+    border-bottom: 1px solid #ddff00;
+  }
+
+  .img-about {
+    margin: 0 0.5rem;
+    width: 350px;
+    object-fit: cover;
+    object-position: 50% 40%;
+    height: 200px;
+    border-bottom: 2px solid #4b4b4b;
+  }
+  .list {
+    /* display: flex;
+    margin-left: 2rem;
+    gap: auto;
+    margin-top: 0.5rem; */
+  }
+
+  /* form */
+  #form {
+    height: 60vh;
+    padding-top: 2rem;
+  }
+  .card-custom {
+    border: 1px solid #373737;
+    width: 90%;
+    border-radius: 5px;
+  }
+  /* social */
+  #social {
+    min-height: 30vh;
+    background-color: #bababa;
+    border-bottom: 1px solid #ddff00;
+  }
+  .btn-custom {
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+    width: 10rem;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    color: #323232;
+  }
+  @media screen and (max-width: 350px) {
+  }
+}

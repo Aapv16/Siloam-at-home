@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Navigasi Sederhana</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="tab-container">
+      <div class="tabs">
+        <button class="tab-button active" data-content="content1">Tab 1</button>
+        <button class="tab-button" data-content="content2">Tab 2</button>
+        <button class="tab-button" data-content="content3">Tab 3</button>
+      </div>
+      <div class="tab-content" id="content1">Konten untuk Tab 1</div>
+      <div class="tab-content" id="content2" style="display: none">Konten untuk Tab 2</div>
+      <div class="tab-content" id="content3" style="display: none">Konten untuk Tab 3</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  .tab-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .tab-button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background: #f1f1f1;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+
+  .tab-button:hover {
+    background-color: #ddd;
+  }
+
+  .tab-button.active {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+  }
+
+  .tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+  }
+</style>
+
+<script>
+  // Ambil semua tombol tab dan konten tab
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  // Tambahkan event listener untuk setiap tombol tab
+  tabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Hapus kelas 'active' dari semua tombol tab
+      tabButtons.forEach((btn) => btn.classList.remove("active"));
+      // Tambahkan kelas 'active' ke tombol yang diklik
+
+      button.classList.add("active");
+
+      // Sembunyikan semua konten tab
+      tabContents.forEach((content) => (content.style.display = "none"));
+
+      // Tampilkan konten yang sesuai dengan tombol yang diklik
+      const targetContent = document.getElementById(button.getAttribute("data-content"));
+      targetContent.style.display = "block";
+    });
+  });
+</script>
