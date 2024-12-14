@@ -92,6 +92,21 @@ video {
   transition: 0.3s ease-in-out;
 }
 
+.judul {
+  position: absolute;
+  /* background-color: #ddff00; */
+  width: 50px;
+  margin-top: 11rem;
+  margin-left: 3rem;
+}
+.judul-1 {
+  position: absolute;
+  /* background-color: #ddff00; */
+  width: 90px;
+  margin-top: 9rem;
+  margin-left: 2.8rem;
+}
+
 /* form */
 #form {
   height: 100vh;

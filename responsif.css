@@ -6,12 +6,13 @@
 @media screen and (max-width: 576px) {
   #hero {
     height: 100vh;
-    border-bottom: 1px solid #ddff00;
+    border-bottom: 2px solid #ddff00;
   }
 
   .img-fluid {
     height: 100vh;
     padding-top: 4rem;
+    border-bottom: 2px solid #ddff00;
   }
 
   .hero .svg i {
@@ -94,6 +95,20 @@
     margin-left: 2rem;
     gap: auto;
     margin-top: 0.5rem; */
+  }
+  .judul {
+    position: absolute;
+    /* background-color: #ddff00; */
+    width: 50px;
+    margin-top: 8rem;
+    margin-left: 2rem;
+  }
+  .judul-1 {
+    position: absolute;
+    /* background-color: #ddff00; */
+    width: 90px;
+    margin-top: 7rem;
+    margin-left: 1.5rem;
   }
 
   /* form */
