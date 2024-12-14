@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsif.css" />
     <!-- style local -->
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS -->
   </head>
   <body>
     <!-- start navbar -->
@@ -129,7 +133,7 @@
   <section id="profil">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-6 justify-content-center text-center h-50 p-2">
+        <div class="col-lg-12 col-md-6 justify-content-center text-center h-50 p-2" data-aos="fade-up" data-aos-duration="1000">
           <!-- vidio -->
           <video class="col-lg-4 col-12 mt-3" controls muted>
             <source src="terbaru.mp4" type="video/mp4" />
@@ -137,7 +141,7 @@
           <p class="text-justify col-lg-12 w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorum, reprehenderit nihil accusamus consectetur harum.</p>
           <!-- vidio -->
 
-          <div class="col-lg-4 col-sm-12 offset-lg-4 text-center">
+          <div class="col-lg-4 col-sm-12 offset-lg-4 text-center" data-aos="fade-up" data-aos-duration="1000">
             <!--  -->
             <div id="carouselExampleDark" class="carousel carousel-dark slide text">
               <div class="carousel-indicators">
@@ -146,14 +150,14 @@
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
+                <div class="carousel-item active">
                   <img src="at.png" class="d-block w-100" alt="..." />
                   <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                   </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-item">
                   <img src="at.png" class="d-block w-100" alt="..." />
                   <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
@@ -185,8 +189,8 @@
     </div>
   </section>
 
-  <section id="about">
-    <div class="container col-lg-6">
+  <section id="about" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+    <div class="autoShow container col-lg-6">
       <div class="row justify-content-center">
         <div class="col justify-content-center">
           <!-- coursel -->
@@ -220,7 +224,7 @@
     <div class="container d-flex justify-content-center col-lg-4 gap-3" style="flex-wrap: wrap">
       <!-- NEXT -->
       <!-- start konten 1 medical -->
-      <div class="col-4 justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbottom" aria-controls="offcanvasBottom">
+      <div class="col-4 justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbottom" aria-controls="offcanvasBottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
         <div class="col-lg-12 col-md-4 col-sm-1 mt-3">
           <img src="path/1.png" class="img-thumbnail polaroid" alt="..." />
         </div>
@@ -357,13 +361,13 @@
 
       <!-- NEXT  -->
       <!-- start konten 2 fisioterapi -->
-      <div class="col-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbottom2" aria-controls="offcanvasbottom">
+      <div class="col-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbottom2" aria-controls="offcanvasbottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <div class="col-lg-12 col-sm-1 mt-3">
           <img src="path/2.png" class="img-thumbnail polaroid" alt="..." />
         </div>
       </div>
       <!-- start isi fisioterapi-->
-      <div class="offcanvas offcanvas-bottom h-75" tabindex="-1" id="offcanvasbottom2" aria-labelledby="offcanvasbottomLabel">
+      <div class="offcanvas offcanvas-bottom h-75" tabindex="-1" id="offcanvasbottom2" aria-labelledby="offcanvasbottomLabel" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <div class="offcanvas-header border-bottom">
           <h5 class="offcanvas-title" id="offcanvasbottomLabel">Fisioterapi</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -496,7 +500,7 @@
 
       <!-- NEXT -->
       <!-- start isi konten 3 gizi -->
-      <div class="col-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbottom3" aria-controls="offcanvasbottom">
+      <div class="col-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbottom3" aria-controls="offcanvasbottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <div class="col-lg-12 col-md-4 col-sm-1">
           <img src="path/3.png" class="img-thumbnail polaroid" alt="..." />
         </div>
@@ -562,7 +566,7 @@
 
       <!-- NEXT -->
       <!-- start isi konten 4 alat -->
-      <div class="col-4 mb-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbottom4" aria-controls="offcanvasbottom">
+      <div class="col-4 mb-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasbottom4" aria-controls="offcanvasbottom" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
         <div class="col-lg-12 col-md-4 col-sm-1">
           <img src="path/4.png" class="img-thumbnail polaroid" alt="..." />
         </div>
@@ -631,7 +635,7 @@
   </section>
 
   <section id="form">
-    <div class="container justify-content-center">
+    <div class="container justify-content-center" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
       <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6 card-custom">
           <!--  -->
@@ -677,4 +681,12 @@
   <!-- script local -->
   <script src="script.js"></script>
   <!-- end script local -->
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+  <!-- AOS -->
 </html>

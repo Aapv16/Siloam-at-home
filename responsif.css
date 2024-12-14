@@ -45,6 +45,7 @@
     margin: 0.5rem;
     font-size: 20px;
     color: #0a0a0a;
+    margin-top: -1rem;
   }
   .hero .icon i:hover {
     color: #00aaff;
