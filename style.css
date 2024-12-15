@@ -63,11 +63,23 @@ h3 {
   position: absolute;
   top: 0rem;
   margin-left: 1.5rem;
-  color: #dddddd;
+  color: #ffffff;
 }
 
 .svg {
   color: #343434;
+}
+
+.watsap1 img {
+  width: 190px;
+  margin-left: 60rem;
+  opacity: 0.8;
+  transition: 0.1s ease-in-out;
+}
+.watsap1 img:hover {
+  opacity: 1;
+  width: 200px;
+  transition: 0.1s ease-in-out;
 }
 /* style navbar*/
 

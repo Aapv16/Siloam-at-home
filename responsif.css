@@ -4,6 +4,17 @@
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 576px) {
+  /* navbar */
+  .watsap1 img {
+    margin-left: 0.5rem;
+    opacity: 0.8;
+    transition: 0.1s ease-in-out;
+  }
+  .watsap1 img:hover {
+    opacity: 1;
+  }
+  /* navbar */
+
   #hero {
     height: 100vh;
     border-bottom: 2px solid #ddff00;
@@ -31,6 +42,10 @@
     position: absolute;
     top: -0.6rem;
     margin-left: 1rem;
+  }
+
+  .img-custom {
+    display: none;
   }
 
   p {
@@ -87,7 +102,7 @@
 
   /*  */
   #about {
-    height: 100vh;
+    height: 120vh;
     padding-top: 5rem;
     border-bottom: 1px solid #ddff00;
   }
@@ -121,15 +136,21 @@
     margin-left: 1.5rem;
   }
 
+  .text-costum {
+    width: 370px;
+  }
+
   /* form */
   #form {
-    height: 60vh;
+    height: 100vh;
     padding-top: 2rem;
   }
   .card-custom {
     border: 1px solid #373737;
     width: 90%;
     border-radius: 5px;
+  }
+  .form-custom {
   }
   /* social */
   #social {
