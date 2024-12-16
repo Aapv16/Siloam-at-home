@@ -7,11 +7,6 @@
   /* navbar */
   .watsap1 img {
     margin-left: 0.5rem;
-    opacity: 0.8;
-    transition: 0.1s ease-in-out;
-  }
-  .watsap1 img:hover {
-    opacity: 1;
   }
   /* navbar */
 
@@ -94,6 +89,7 @@
 
   /* profil */
   #profil {
+    height: 120vh;
     padding-top: 5rem;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid #ddff00;
@@ -106,6 +102,9 @@
     padding-top: 5rem;
     border-bottom: 1px solid #ddff00;
   }
+  #about .slide {
+    height: 300px;
+  }
 
   .img-about {
     margin: 0 0.5rem;
@@ -115,6 +114,7 @@
     height: 200px;
     border-bottom: 2px solid #4b4b4b;
   }
+
   .list {
     /* display: flex;
     margin-left: 2rem;
@@ -138,6 +138,9 @@
 
   .text-costum {
     width: 370px;
+  }
+  .polaroid-card {
+    margin-top: 1rem;
   }
 
   /* form */
