@@ -175,7 +175,7 @@
           <div class="card d-lg-none">
             <img src="mn.png" class="card-img-top rounded-3" data-aos="fade-up" data-aos-duration="1000" height="300px" style="object-fit: cover; object-position: 20% 50%" alt="..." />
             <div class="card-body">
-              <p class="card-text">Last pdate.</p>
+              <p class="card-text">Last update.</p>
             </div>
           </div>
           <!--  -->
@@ -185,7 +185,7 @@
   </section>
 
   <section id="about" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
-    <div class="autoShow container col-lg-6">
+    <div class="autoShow container col-lg-6" data-aos="fade-up" data-aos-duration="1000">
       <div class="row justify-content-center">
         <div class="col justify-content-center">
           <!-- coursel -->
@@ -641,21 +641,46 @@
         <div class="col-lg-4 col-md-6 card-custom">
           <!--  -->
           <h4 class="text-center p-3">Kontak kami</h4>
-          <form>
+          <!-- alerts -->
+          <div class="alert alert-success text-center d-none alert-dismissible fade show" role="alert">
+            <strong>Terimakasi!</strong><br />
+            pesan anda sudah kami terima.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <!-- alerts -->
+          <form name="submit-sheet">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Nama lengkap</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              <label for="name" class="form-label">Nama lengkap</label>
+              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+              <!-- <div id="name" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" />
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
-            <div class="mb-3">
+            <!-- <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
               <input type="password" class="form-control" id="exampleInputPassword1" />
-            </div>
-            <div class="mb-3 form-check">
+            </div> -->
+            <!-- <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1" />
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Pesan</label>
+
+              <textarea type="text" class="form-control" id="pesan" aria-describedby="pesan" name="pesan"></textarea>
+
+              <!-- <div id="name" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
-            <button type="submit" class="btn btn-primary mb-5 btn-custom">Submit</button>
+
+            <button type="submit" href="submit" class="btn btn-primary mb-5 btn-custom btn-kirim">Submit</button>
+            <button class="d-none btn btn-primary mb-5 btn-custom btn-loading" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+              <span role="status">Loading...</span>
+            </button>
           </form>
 
           <!--  -->
@@ -690,4 +715,38 @@
     });
   </script>
   <!-- AOS -->
+
+  <!-- kontak form -->
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxoPpG2GzYOA8erWLMh9ZsOs0mrjNJVIgixZBC_8xRnwk162el1Jqsh2T9Vpz717pjIBw/exec";
+    const form = document.forms["submit-sheet"];
+    const btnKirim = document.querySelector(".btn-kirim");
+    const btnLoading = document.querySelector(".btn-loading");
+    const alert = document.querySelector(".alert");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      // ketika btn-kirim di klik
+      // tampilkan tombol loadaing dan hilangkan tombol kirim
+
+      btnLoading.classList.toggle("d-none");
+      // js mintol carikan di didalam class btn-loadaing apakah ada d-none?, kalau ada hilangkan ya tapi kalau tidak ada di kasih ya.
+      btnKirim.classList.toggle("d-none");
+
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          // tampilkana btn kirim lalu hilangkan tombol loadaing
+          btnLoading.classList.toggle("d-none");
+          btnKirim.classList.toggle("d-none");
+          // tampilkan alert
+          alert.classList.toggle("d-none");
+          // reset isi form
+          form.reset();
+
+          console.log("Success!", response);
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+  <!-- kontak form -->
 </html>
