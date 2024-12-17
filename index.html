@@ -651,14 +651,20 @@
           <form name="submit-sheet">
             <div class="mb-3">
               <label for="name" class="form-label">Nama lengkap</label>
-              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" autocomplete="off" />
               <!-- <div id="name" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
 
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" />
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <label for="asalRuangan" class="form-label">Asal Ruangan</label>
+              <input type="text" class="form-control" id="asalRuangan" aria-describedby="asalRuangan" name="asal-ruangan" autocomplete="off" />
+              <!-- <div id="name" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+
+            <div class="mb-3">
+              <label for="noHandphone" class="form-label">No-Handphone</label>
+              <input type="number" class="form-control" id="noHandphone" aria-describedby="no-handphone" name="no-handphone" autocomplete="off" />
+              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
             <!-- <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -671,14 +677,14 @@
             <div class="mb-3">
               <label for="name" class="form-label">Pesan</label>
 
-              <textarea type="text" class="form-control" id="pesan" aria-describedby="pesan" name="pesan"></textarea>
+              <textarea type="text" class="form-control" style="height: 100px" id="pesan" aria-describedby="pesan" name="pesan"></textarea>
 
               <!-- <div id="name" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
 
             <button type="submit" href="submit" class="btn btn-primary mb-5 btn-custom btn-kirim">Submit</button>
             <button class="d-none btn btn-primary mb-5 btn-custom btn-loading" type="button" disabled>
-              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+              <span class="spinner-border spinner-border-sm mx-2 mt-1" aria-hidden="true"></span>
               <span role="status">Loading...</span>
             </button>
           </form>
