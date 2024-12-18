@@ -86,11 +86,14 @@
     </nav>
     <!-- end navbar -->
   </body>
+
   <div class="container">
     <div class="row">
-      <div class="col-6 position-fixed watsap1" data-aos="fade-left" style="z-index: 999; bottom: 0; margin-top: 2rem; padding-left: 15rem">
-        <img src="wa.png" width="200px" alt="" />
-      </div>
+      <!-- <a href="#">
+        <div class="col-6 position-fixed watsap1" data-aos="fade-left" style="z-index: 999; bottom: 0; margin-top: 2rem; padding-left: 19rem">
+          <img src="wa.png" width="5px" alt="" />
+        </div>
+      </a> -->
     </div>
   </div>
 
@@ -640,35 +643,48 @@
       <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6 card-custom">
           <!--  -->
-          <h4 class="text-center p-3">Kontak kami</h4>
+          <h4 class="text-center p-3">
+            <span><i class="bi bi-person-lines-fill"></i></span> Kontak kami
+          </h4>
           <!-- alerts -->
           <div class="alert alert-success text-center d-none alert-dismissible fade show" role="alert">
             <strong>Terimakasi!</strong><br />
-            pesan anda sudah kami terima.
+            pesan anda sudah kami terima.🚀
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
           <!-- alerts -->
           <form name="submit-sheet">
             <div class="mb-3">
               <label for="name" class="form-label">Nama lengkap</label>
-              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" autocomplete="off" autofocus required />
+              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" autocomplete="off" required oninvalid="this.setCustomValidity('di harus diisi!')" />
               <!-- <div id="name" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
 
             <div class="mb-3">
               <label for="asalRuangan" class="form-label">Asal Ruangan</label>
-              <input type="text" class="form-control" id="asalRuangan" aria-describedby="asalRuangan" name="asal-ruangan" autocomplete="off" required />
+              <input type="text" class="form-control" id="asalRuangan" aria-describedby="asalRuangan" name="asal-ruangan" autocomplete="off" required oninvalid="this.setCustomValidity('di harus diisi!')" />
               <!-- <div id="name" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
 
             <div class="mb-3">
               <label for="noHandphone" class="form-label">No-Handphone</label>
-              <input type="number" class="form-control" id="noHandphone" aria-describedby="no-handphone" name="no-handphone" autocomplete="off" required />
+              <input
+                type="number"
+                class="form-control"
+                id="noHandphone"
+                aria-describedby="no-handphone"
+                name="no-handphone"
+                pattern="(\+62|62|0)8[1-9][0-9]{6,9}$"
+                autocomplete="off"
+                required
+                oninvalid="this.setCustomValidity('di harus diisi!')"
+                oninput="this.setCustomValidity('')"
+              />
               <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
             <div class="mb-3">
               <label for="alamat" class="form-label">Alamat</label>
-              <input type="text" class="form-control" id="alamat" aria-describedby="alamat" name="alamat" autocomplete="off" required />
+              <input type="text" class="form-control" id="alamat" aria-describedby="alamat" name="alamat" autocomplete="off" required oninvalid="this.setCustomValidity('di harus diisi!')" />
               <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
             <!-- <div class="mb-3">
@@ -682,7 +698,7 @@
             <div class="mb-3">
               <label for="name" class="form-label">Pesan</label>
 
-              <textarea type="text" class="form-control" style="height: 100px" id="pesan" aria-describedby="pesan" name="pesan" required></textarea>
+              <textarea type="text" class="form-control" style="height: 100px" id="pesan" aria-describedby="pesan" name="pesan" required oninvalid="this.setCustomValidity('di harus diisi!')"></textarea>
 
               <!-- <div id="name" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
@@ -700,6 +716,12 @@
     </div>
   </section>
 
+  <section id="review">
+    
+
+    
+  </section>
+
   <footer id="social">
     <div class="container">
       <p class="text-center pt-5 text-secondary justify-content-center mx-auto">Copyright 2024 | Siloam at Home | Purwakarta</p>
@@ -710,6 +732,9 @@
       </div>
     </div>
   </footer>
+
+
+
 
   <!-- script -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
