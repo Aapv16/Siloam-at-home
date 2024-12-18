@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -88,4 +88,60 @@
       targetContent.style.display = "block";
     });
   });
-</script>
+</script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <style>
+    /* Gaya untuk input dengan error */
+    .error {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <form id="myForm">
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="message">Pesan:</label>
+    <textarea id="message" name="message"></textarea><br><br>
+
+    <button type="button" onclick="validateForm()">Kirim</button>
+  </form>
+
+  <script>
+    function validateForm() {
+      // Ambil semua input dalam form
+      const form = document.getElementById('myForm');
+      const inputs = form.querySelectorAll('input, textarea');
+      let isValid = true;
+
+      // Loop melalui setiap input
+      inputs.forEach(input => {
+        // Hapus class error jika ada
+        input.classList.remove('error');
+
+        // Jika input kosong
+        if (!input.value.trim()) {
+          isValid = false;
+          input.classList.add('error'); // Tambahkan class error
+        }
+      });
+
+      // Jika ada input yang kosong, tampilkan alert
+      if (!isValid) {
+        alert('Tolong isi semua field!');
+      } else {
+        alert('Form berhasil dikirim!');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -651,24 +651,24 @@
           <form name="submit-sheet">
             <div class="mb-3">
               <label for="name" class="form-label">Nama lengkap</label>
-              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" autocomplete="off" />
+              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" autocomplete="off" autofocus required />
               <!-- <div id="name" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
 
             <div class="mb-3">
               <label for="asalRuangan" class="form-label">Asal Ruangan</label>
-              <input type="text" class="form-control" id="asalRuangan" aria-describedby="asalRuangan" name="asal-ruangan" autocomplete="off" />
+              <input type="text" class="form-control" id="asalRuangan" aria-describedby="asalRuangan" name="asal-ruangan" autocomplete="off" required />
               <!-- <div id="name" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
 
             <div class="mb-3">
               <label for="noHandphone" class="form-label">No-Handphone</label>
-              <input type="number" class="form-control" id="noHandphone" aria-describedby="no-handphone" name="no-handphone" autocomplete="off" />
+              <input type="number" class="form-control" id="noHandphone" aria-describedby="no-handphone" name="no-handphone" autocomplete="off" required />
               <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
             <div class="mb-3">
               <label for="alamat" class="form-label">Alamat</label>
-              <input type="text" class="form-control" id="alamat" aria-describedby="alamat" name="alamat" autocomplete="off" />
+              <input type="text" class="form-control" id="alamat" aria-describedby="alamat" name="alamat" autocomplete="off" required />
               <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
             <!-- <div class="mb-3">
@@ -682,7 +682,7 @@
             <div class="mb-3">
               <label for="name" class="form-label">Pesan</label>
 
-              <textarea type="text" class="form-control" style="height: 100px" id="pesan" aria-describedby="pesan" name="pesan"></textarea>
+              <textarea type="text" class="form-control" style="height: 100px" id="pesan" aria-describedby="pesan" name="pesan" required></textarea>
 
               <!-- <div id="name" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
@@ -737,6 +737,7 @@
 
     form.addEventListener("submit", (e) => {
       e.preventDefault();
+
       // ketika btn-kirim di klik
       // tampilkan tombol loadaing dan hilangkan tombol kirim
 
@@ -759,6 +760,7 @@
         })
         .catch((error) => console.error("Error!", error.message));
     });
+    // funtion validasi
   </script>
   <!-- kontak form -->
 </html>
