@@ -91,7 +91,7 @@
 
   /* profil */
   #profil {
-    height: 150vh;
+    height: 130vh;
     padding-top: 5rem;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid #ddff00;
@@ -100,9 +100,9 @@
 
   /*  */
   #about {
-    height: 120vh;
+    height: 100vh;
     padding-top: 5rem;
-    border-bottom: 1px solid #ddff00;
+    border-bottom: 3px solid #ddff00;
   }
   #about .slide {
     height: 300px;
@@ -143,6 +143,10 @@
   }
   .polaroid-card {
     margin-top: 1rem;
+  }
+
+  .carousel-item {
+    transition: 1s ease-in-out;
   }
 
   /* form */

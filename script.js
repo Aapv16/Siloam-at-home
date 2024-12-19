@@ -7,4 +7,4 @@ menyala.forEach((link) => {
   });
 });
 
-// 
+//
