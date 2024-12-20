@@ -166,7 +166,7 @@
 
   #review {
     height: 100vh;
-    background-color: #e2e2e2;
+    background-color: hsl(0, 0%, 100%);
     border-top: 1px solid #ddff00;
     border-bottom: 1px solid #ddff00;
   }
@@ -176,7 +176,7 @@
     margin-bottom: 1rem;
   }
   .video-custom {
-    -webkit-mask-image: linear-gradient(black 60%, transparent);
+    -webkit-mask-image: linear-gradient(black 70%, transparent);
     mask-image: linear-gradient(black, transparent) 50%;
   }
 
