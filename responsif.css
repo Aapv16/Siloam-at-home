@@ -91,7 +91,7 @@
 
   /* profil */
   #profil {
-    height: 150vh;
+    height: 20clea0vh;
     padding-top: 5rem;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid #ddff00;
@@ -165,7 +165,7 @@
   }
 
   #review {
-    height: 100vh;
+    height: 150vh;
     background-color: hsl(0, 0%, 100%);
     border-top: 1px solid #ddff00;
     border-bottom: 1px solid #ddff00;
