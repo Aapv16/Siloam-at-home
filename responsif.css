@@ -97,6 +97,10 @@
     border-bottom: 1px solid #ddff00;
     border-radius: 5px;
   }
+  #profil iframe {
+    -webkit-mask-image: linear-gradient(rgb(0, 0, 0) 70%, transparent);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0.01), transparent) 100%;
+  }
 
   /*  */
   #about {
@@ -165,6 +169,15 @@
     background-color: #e2e2e2;
     border-top: 1px solid #ddff00;
     border-bottom: 1px solid #ddff00;
+  }
+  .video-custom {
+    border: 2px solid #ffbb00;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  .video-custom {
+    -webkit-mask-image: linear-gradient(black 60%, transparent);
+    mask-image: linear-gradient(black, transparent) 50%;
   }
 
   /* social */
