@@ -169,7 +169,7 @@
   }
 
   #review {
-    height: 100vh;
+    height: 150vh;
     background-color: hsl(0, 0%, 100%);
     border-top: 1px solid #ddff00;
     border-bottom: 1px solid #ddff00;
@@ -184,6 +184,9 @@
   .video-custom {
     -webkit-mask-image: linear-gradient(black 70%, transparent);
     mask-image: linear-gradient(black, transparent) 50%;
+  }
+  .block-custom2 {
+    height: 400px;
   }
 
   /* social */
