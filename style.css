@@ -96,6 +96,13 @@ h3 {
   height: 400px;
 }
 
+#review .block-custom2 {
+  height: 250px;
+}
+#review .block-custom1 {
+  height: 500px;
+}
+
 /* about */
 #about {
   height: 150vh;
